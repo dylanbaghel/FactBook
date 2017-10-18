@@ -8,8 +8,15 @@ namespace FactBook
 {
     class FactWheel
     {
-        public String firstName { get; set; }
-        public String lastName { get; set; }
-        public String address { get; set; }
+        private String[] facts = {"Abhishek Baghel is Superman",
+        "Honey Singh is SuperStar!",
+        "Dylan Bahgel uses Github repository for his projects",
+        "Why ASP.Net is Better than PHP.",
+        "PYTHON is a programming language and a snake also"};
+
+        public String randomFact() {
+            int randomNumber = new Random().Next(1,facts.Length);
+            return facts[randomNumber];
+        }
     }
 }
