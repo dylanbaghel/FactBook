@@ -8,8 +8,8 @@ namespace FactBook
 {
     class FactWheel
     {
-        public String name { get; set; }
-
+        public String firstName { get; set; }
+        public String lastName { get; set; }
         public String address { get; set; }
     }
 }
