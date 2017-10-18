@@ -11,6 +11,7 @@ namespace FactBook
         static void Main(string[] args)
         {
             FactWheel factWheel = new FactWheel();
+            Console.WriteLine("Generating Random Fact...........................");
             Console.WriteLine(factWheel.randomFact());
             Console.WriteLine(factWheel.randomFact());
             Console.WriteLine(factWheel.randomFact());
